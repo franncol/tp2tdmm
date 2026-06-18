@@ -1,0 +1,306 @@
+<html>
+
+<head>
+    <title>Cinéfilos Oficial</title>
+    <link rel="icon" type="image/png" href="imagenes/logomobile.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mi primera pagina web">
+    <meta name="language" content="es">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="imagenes/logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <ul class="menu">
+            <li><a href="novedades.html">NOVEDADES</a></li>
+            <li><a href="eventos.html">EVENTOS</a></li>
+            <li><a href="#">SOCIAL</a></li>
+            <li><a href="#">RECOMENDADOS</a></li>
+            <li><a href="#">NOSOTROS</a></li>
+        </ul>
+
+        <div class="extras">
+            <button id="btnBuscar">
+                <img src="imagenes/lupa.png" alt="Buscar">
+            </button>
+            <input type="search" id="busqueda" placeholder="Buscar...">
+            <a class="notif">
+                <img src="imagenes/notifications.png" alt="Usuario">
+            </a>
+            <a class="usuario">
+                <img src="imagenes/usuario.png" alt="Usuario">
+            </a>
+        </div>
+    </nav>
+    <main>
+
+        <!-- HERO -->
+        <section class="hero-eventos">
+            <div class="hero-eventos-contenido">
+                <h1>EVENTOS</h1>
+                <p>Estrenos, festivales, avant premières y encuentros para vivir el cine en comunidad.</p>
+
+                <h2>FESTIVAL DE CINE INTERNACIONAL DE MAR DEL PLATA</h2>
+                <p class="meta">MAR DEL PLATA, ARG - 15 AL 24 DE JULIO</p>
+                <a class="btn-vermás">VER MÁS</a>
+            </div>
+        </section>
+
+        <!-- FILTROS -->
+
+
+        <!-- PRÓXIMOS EVENTOS -->
+        <h2 class="seccion-titulo">PRÓXIMOS EVENTOS</h2>
+        <div class="filtros">
+            <button class="filtro-btn activo">PRÓXIMOS 30 DÍAS</button>
+            <button class="filtro-btn">ESTRENOS</button>
+            <button class="filtro-btn">FESTIVALES</button>
+            <button class="filtro-btn">ENCUENTROS</button>
+        </div>
+
+        <div class="timeline">
+
+            <!-- EVENTO 1 -->
+            <div class="evento-row">
+                <div class="evento-fecha">
+                    <span>JUN</span>
+                    <span class="dia">15</span>
+                </div>
+                <div class="evento-linea">
+                    <div class="evento-circulo"></div>
+                </div>
+                <div class="evento-card">
+                    <img src="imagenes/evento1.png" alt="Festival de Cannes">
+                    <div class="evento-info">
+                        <span class="evento-tipo">FESTIVAL</span>
+                        <h3>FESTIVAL DE CANNES 2026</h3>
+                        <p>La 79° edición del festival más prestigioso del mundo. Estrenos exclusivos, invitados
+                            especiales y lo mejor del cine internacional.</p>
+                    </div>
+                    <div class="evento-meta">
+                        <div class="evento-meta-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                            </svg>
+                            CANNES, FRANCIA
+                        </div>
+                        <div class="evento-meta-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                            2.4K ASISTIRÁN
+                        </div>
+                        <button class="btn-ver">VER MÁS</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EVENTO 2 -->
+            <div class="evento-row">
+                <div class="evento-fecha">
+                    <span>JUN</span>
+                    <span class="dia">22</span>
+                </div>
+                <div class="evento-linea">
+                    <div class="evento-circulo"></div>
+                </div>
+                <div class="evento-card">
+                    <img src="imagenes/evento2.png" alt="Premios INCAA">
+                    <div class="evento-info">
+                        <span class="evento-tipo">PREMIOS</span>
+                        <h3>PREMIOS INCAA 2026</h3>
+                        <p>La gran noche del cine argentino. Celebramos lo mejor de nuestra industria con vos.</p>
+                    </div>
+                    <div class="evento-meta">
+                        <div class="evento-meta-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                            </svg>
+                            BUENOS AIRES, ARG
+                        </div>
+                        <div class="evento-meta-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                            1.1K ASISTIRÁN
+                        </div>
+                        <button class="btn-ver">VER MÁS</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EVENTO 3 -->
+            <div class="evento-row">
+                <div class="evento-fecha">
+                    <span>JUN</span>
+                    <span class="dia">29</span>
+                </div>
+                <div class="evento-linea">
+                    <div class="evento-circulo"></div>
+                </div>
+                <div class="evento-card">
+                    <img src="imagenes/evento3.png" alt="Superman">
+                    <div class="evento-info">
+                        <span class="evento-tipo">ESTRENO</span>
+                        <h3>SUPERMAN</h3>
+                        <p>El nuevo universo DC comienza. Avant premiere exclusiva para la comunidad Cinéfilos.</p>
+                    </div>
+                    <div class="evento-meta">
+                        <div class="evento-meta-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                            </svg>
+                            CINES SELECCIONADOS
+                        </div>
+                        <div class="evento-meta-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                            3.7K ASISTIRÁN
+                        </div>
+                        <button class="btn-ver">VER MÁS</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EVENTO 4 -->
+            <div class="evento-row">
+                <div class="evento-fecha">
+                    <span>JUL</span>
+                    <span class="dia">12</span>
+                </div>
+                <div class="evento-linea">
+                    <div class="evento-circulo"></div>
+                </div>
+                <div class="evento-card">
+                    <img src="imagenes/evento4.png" alt="Comic Con">
+                    <div class="evento-info">
+                        <span class="evento-tipo">ENCUENTRO</span>
+                        <h3>COMIC CON ARGENTINA 2026</h3>
+                        <p>El encuentro más importante de cultura pop, cine, series, cómics y gaming.</p>
+                    </div>
+                    <div class="evento-meta">
+                        <div class="evento-meta-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                            </svg>
+                            LA RURAL, CABA
+                        </div>
+                        <div class="evento-meta-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                            5.2K ASISTIRÁN
+                        </div>
+                        <button class="btn-ver">VER MÁS</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- BOTON VER TODOS -->
+        <button class="btn-ver-todos">VER TODOS LOS EVENTOS</button>
+
+        <!-- SECCION COMUNIDAD -->
+        <div class="seccion-comunidad">
+            <div class="comunidad-bloque">
+                <h3>LA COMUNIDAD ASISTIRÁ</h3>
+                <div class="avatares">
+                    <div class="avatar">MR</div>
+                    <div class="avatar">LP</div>
+                    <div class="avatar">AK</div>
+                    <div class="avatar">SV</div>
+                    <div class="avatar">TN</div>
+                    <div class="avatar avatar-mas">+90</div>
+                </div>
+                <p>Muchas personas de la comunidad ya confirmaron su asistencia a eventos todo mes.</p>
+                <button class="btn-comunidad">VER QUIÉNES VAN</button>
+            </div>
+            <div class="comunidad-bloque">
+                <h3>¿A DÓNDE VAMOS?</h3>
+                <h2>Creá un grupo para organizarte y no perderte ningún evento</h2>
+                <p>Coordiná con otros cinéfilos, elegí asientos juntos y viví el cine en comunidad.</p>
+                <button class="btn-comunidad">CREAR GRUPO</button>
+            </div>
+        </div>
+
+        <!-- BANNER DESCUENTOS -->
+        <div class="banner-descuentos">
+
+            <div class="banner-info">
+                <small>EXCLUSIVO PARA MIEMBROS</small>
+                <h2>DESCUENTOS Y ENTRADAS ANTICIPADAS</h2>
+                <h3>ACCEDÉ A BENEFICIOS ESPECIALES EN EVENTOS SELECCIONADOS.</h3>
+            </div>
+            <button class="btn-beneficios">VER BENEFICIOS</button>
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-arriba">
+            <div class="footer-item">
+                <img src="imagenes/logo.png">
+                <p>La comunidad definitiva para <br>los amantes del cine, las series </br> y el streaming.</p>
+                <img src="imagenes/redes.png">
+            </div>
+            <div class="footer-item espaciado">
+                <h3>EXPLORAR</h3>
+                <p>Novedades</p>
+                <p>Eventos</p>
+                <p>Social</p>
+                <p>Recomendados</p>
+                <p>Nosotros</p>
+            </div>
+            <div class="footer-item espaciado">
+                <h3>SOPORTE</h3>
+                <p>Contacto</p>
+                <p>Términos y condiciones</p>
+                <p>Política de privacidad</p>
+            </div>
+            <div class="footer-item">
+                <h3 class="footer-item espaciado">RECIBE NOTICIAS</h3>
+                <p>Suscribite y mantenete al día <br>con los mejores estrenos.</br></p>
+                <input type="email" placeholder="Tu correo electrónico">
+                <button>UNIRSE</button>
+            </div>
+        </div>
+
+
+
+        <div class="footer-centro">
+            <p>©2026 Cinéfilos. Todos los derechos reservados</p>
+            <p class="textoizq">Hecho con pasión por el cine.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+
+
+</html>
