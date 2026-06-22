@@ -1,0 +1,167 @@
+<html>
+
+<head>
+    <title>Cinéfilos Oficial</title>
+    <link rel="icon" type="image/png" href="imagenes/icono.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mi primera pagina web">
+    <meta name="language" content="es">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="imagenes/logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <ul class="menu">
+            <li><a href="novedades.html">NOVEDADES</a></li>
+            <li><a href="eventos.html">EVENTOS</a></li>
+            <li><a href="social.html">SOCIAL</a></li>
+            <li><a href="#">RECOMENDADOS</a></li>
+            <li><a href="#">NOSOTROS</a></li>
+        </ul>
+
+        <div class="extras">
+            <button id="btnBuscar">
+                <img src="imagenes/lupa.png" alt="Buscar">
+            </button>
+            <input type="search" id="busqueda" placeholder="Buscar...">
+            <a class="notif">
+                <img src="imagenes/notifications.png" alt="Usuario">
+            </a>
+            <a class="usuario">
+                <img src="imagenes/usuario.png" alt="Usuario">
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="titulo">
+            <h1>SOCIAL</h1>
+        </section>
+
+        <section class="comentarios">
+            <h2>COMENTARIOS DE LA COMUNIDAD <span style="color: #9C2A1F;">❯</span></h2>
+
+            <div class="comentarios-grid">
+
+                <div class="comentario-card">
+                    <img src="imagenes/thebear.png" alt="The Bear">
+                    <div class="comentario-info">
+                        <p class="comentario-usuario">NINO.20</p>
+                        <p class="comentario-tiempo">HACE 2 SEMANAS</p>
+                        <p class="comentario-estrellas">★★★★★</p>
+                        <p class="comentario-texto">La actuación de Jeremy Allen White es espectacular. De las mejores
+                            series que vi recientemente.</p>
+                        <div class="comentario-acciones">
+                            <button class="comentario-like"><img src="imagenes/fav.png"> 195</button>
+                            <button class="comentario-responder"><img src="imagenes/com.png"> RESPONDER</button>
+                            <button class="comentario-guardar"><img src="imagenes/save.png"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comentario-card">
+                    <img src="imagenes/thewitch.png" alt="The Witch">
+                    <div class="comentario-info">
+                        <p class="comentario-usuario">GONZA_25</p>
+                        <p class="comentario-tiempo">HACE 3 SEMANAS</p>
+                        <p class="comentario-estrellas">★★★★☆</p>
+                        <p class="comentario-texto">Muy buena película, aunque no es para cualquiera. Si buscás sustos
+                            constantes quizá se haga lenta, pero la atmósfera es increíble.</p>
+                        <div class="comentario-acciones">
+                            <button class="comentario-like"><img src="imagenes/fav.png"> 195</button>
+                            <button class="comentario-responder"><img src="imagenes/com.png"> RESPONDER</button>
+                            <button class="comentario-guardar"><img src="imagenes/save.png"></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="resenas">
+            <h2>RESEÑAS POPULARES <span style="color: #9C2A1F;">❯</span></h2>
+            <div class="resenas-grid">
+
+                <div class="resena-card">
+                    <img src="imagenes/hereditary.png" alt="The Bear">
+                    <div class="resena-info">
+                        <p class="resena-puntaje">★ 8.4<span>/10</span></p>
+                        <h2 class="resena-titulo">HEREDITARY</h2>
+                        <p class="resena-texto">UNA OBRA MAESTRA MODERNA DEL TERROR PSICOLÓGICO QUE USA EL DUELO
+                            FAMILIAR PARA CONSTRUIR UNA ATMÓSFERA ASFIXIANTE Y PERTURBADORA.</p>
+                        <div class="resena-acciones">
+                            <img src="imagenes/hereditary.png" class="resena-avatar">
+                            <p class="resena-usuario">MARIA_8172</p>
+                            <button class="resena-like"><img src="imagenes/fav.png"> 195</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="resena-card">
+                    <img src="imagenes/dark.png" alt="The Bear">
+                    <div class="resena-info">
+                        <p class="resena-puntaje">★ 8.1<span>/10</span></p>
+                        <h2 class="resena-titulo">THE DARK AND THE WICKED</h2>
+                        <p class="resena-texto">UNA JOYA DEL TERROR PSICOLÓGICO CON UNA ATMÓSFERA ASFIXIANTE Y UN MIEDO
+                            REAL QUE COMPENSAN SU RITMO ALGO LENTO.</p>
+                        <div class="resena-acciones">
+                            <img src="imagenes/dark.png" class="resena-avatar">
+                            <p class="resena-usuario">MATIAS_0823</p>
+                            <button class="resena-like"><img src="imagenes/fav.png"> 195</button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-arriba">
+            <div class="footer-item">
+                <img src="imagenes/logo.png">
+                <p>La comunidad definitiva para <br>los amantes del cine, las series </br> y el streaming.</p>
+                <img src="imagenes/redes.png">
+            </div>
+            <div class="footer-item espaciado">
+                <h3>EXPLORAR</h3>
+                <p>Novedades</p>
+                <p>Eventos</p>
+                <p>Social</p>
+                <p>Recomendados</p>
+                <p>Nosotros</p>
+            </div>
+            <div class="footer-item espaciado">
+                <h3>SOPORTE</h3>
+                <p>Contacto</p>
+                <p>Términos y condiciones</p>
+                <p>Política de privacidad</p>
+            </div>
+            <div class="footer-item">
+                <h3 class="footer-item espaciado">RECIBE NOTICIAS</h3>
+                <p>Suscribite y mantenete al día <br>con los mejores estrenos.</br></p>
+                <input type="email" placeholder="Tu correo electrónico">
+                <button>UNIRSE</button>
+            </div>
+        </div>
+
+
+
+        <div class="footer-centro">
+            <p>©2026 Cinéfilos. Todos los derechos reservados</p>
+            <p class="textoizq">Hecho con pasión por el cine.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

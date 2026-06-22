@@ -30,17 +30,18 @@ a {
     font-family: "Heading Now Medium";
 }
 
-p {
-    font-family: "Creato Display Regular";
-}
-
-h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-    font-family: "Creato Display";
+h6,
+p {
+    font-family: "Creato Display Regular";
+    color: white;
+}
+
+h1 {
+    font-family: "Heading Now Medium";
     color: white;
 }
 
@@ -150,7 +151,7 @@ main {
 .hero-carousel {
     position: relative;
     height: 500px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 .hero-carousel img {
@@ -207,7 +208,7 @@ main {
 .cards {
     display: flex;
     gap: 80px;
-    margin-bottom: 150px;
+    margin-bottom: 70px;
     justify-content: space-between;
 }
 
@@ -266,7 +267,7 @@ main {
 
 
 .peliculas {
-    margin-bottom: 150px;
+    margin-bottom: 80px;
 }
 
 
@@ -302,7 +303,7 @@ main {
     grid-template-columns: 1fr 1fr;
     gap: 80px;
     margin-top: 40px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 .noticia img {
@@ -323,6 +324,7 @@ main {
     background-color: black;
     padding: 5px 10px;
 }
+
 /*.noticiaprincipal {
     background-image: url(imagenes/fondo.png);
       margin-left: -120px;
@@ -463,7 +465,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 
 .evento-row {
@@ -615,22 +617,16 @@ main {
 .btn-ver-todos {
     display: block;
     width: fit-content;
-    margin: 0 auto 100px;
-    padding: 16px 60px;
-    background-color: rgba(156, 42, 31, 0.15);
-    border: 1px solid #9C2A1F;
-    color: white;
-    font-family: "Creato Display";
-    font-size: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    letter-spacing: 2px;
-}
+    margin: -60 auto;
 
-.btn-ver-todos:hover {
-    background-color: #F8D15C;
-    border: 1px solid #F8D15C;
-    color: #000000;
+    background-color: none;
+
+    cursor: pointer;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transform: rotate(90deg);
+    margin-bottom: 100px;
 }
 
 /* SECCION COMUNIDAD */
@@ -787,127 +783,574 @@ main {
 
 
 
-  /*  DESTACADO  */
-        .destacado {
-            position: relative;
-            border-radius: 15px;
-            overflow: hidden;
-            margin-bottom: 80px;
-        }
- 
-        .destacado img {
-            width: 100%;
-            height: 500px;
-            object-fit: cover;
-            display: block;
-        }
- 
-        .destacado .texto-carrusel h2 {
-            background-color: black;
-            padding: 5px 10px;
-        }
- 
-        /* PRÓXIMOS ESTRENOS  */
-        .proximos-estrenos {
-            margin-bottom: 100px;
-        }
- 
-        .proximos-estrenos h2 {
-           
-            margin-bottom: 40px;
-        }
- 
-        .timeline-linea {
-            position: relative;
-            display: flex;
-            gap: 250px;
-        }
- 
-        .timeline-linea::before {
-            content: '';
-            position: absolute;
-            top: 10px;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background-color: #333;
-        }
- 
-        .estreno-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            flex: 1;
-            max-width: 300px;
-           
-          
-        }
- 
-        .estreno-punto {
-            width: 14px;
-            height: 14px;
-            border-radius: 50%;
-            background-color: #9C2A1F;
-            border: 2px solid #F8D15C;
-            margin-bottom: 12px;
-            position: relative;
-            z-index: 1;
-            flex-shrink: 0;
-            
-        }
- 
-        .estreno-fecha {
-            background-color: #111;
-            border: 1px solid #333;
-            border-radius: 8px;
-            padding: 8px 12px;
-            text-align: center;
-            width: 100%;
-            margin-bottom: 12px;
-        }
- 
-        .estreno-fecha .dia {
-            font-family: "Creato Display";
-            font-size: 28px;
-            color: white;
-            line-height: 1;
-        }
- 
-        .estreno-fecha .mes {
-            font-family: "Creato Display";
-            font-size: 12px;
-            color: white;
-            letter-spacing: 1px;
-        }
- 
-        .estreno-fecha .anio {
-            font-family: "Creato Display Regular";
-            font-size: 11px;
-            color: #666;
-        }
- 
-        .estreno-poster {
-            width: 100%;
-           height: 250px;
-            object-fit:fill ;
-            border-radius: 8px;
-        }
- 
-        .estreno-titulo {
-            font-family: "Creato Display";
-            font-size: 11px;
-            color: white;
-            text-align: center;
-            margin-top: 8px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
+/*  DESTACADO  */
+.destacado {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.destacado img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.destacado .texto-carrusel h2 {
+    background-color: black;
+    padding: 5px 10px;
+}
+
+/* PRÓXIMOS ESTRENOS  */
+.proximos-estrenos {
+    margin-bottom: 100px;
+}
+
+.proximos-estrenos h2 {
+
+    margin-bottom: 40px;
+}
+
+.timeline-linea {
+    position: relative;
+    display: flex;
+    gap: 250px;
+}
+
+.timeline-linea::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #333;
+}
+
+.estreno-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    max-width: 300px;
+
+
+}
+
+.estreno-punto {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #9C2A1F;
+    border: 2px solid #F8D15C;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
+
+}
+
+.estreno-fecha {
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 8px 12px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.estreno-fecha .dia {
+    font-family: "Creato Display";
+    font-size: 28px;
+    color: white;
+    line-height: 1;
+}
+
+.estreno-fecha .mes {
+    font-family: "Creato Display";
+    font-size: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.estreno-fecha .anio {
+    font-family: "Creato Display Regular";
+    font-size: 11px;
+    color: #666;
+}
+
+.estreno-poster {
+    width: 100%;
+    height: 250px;
+    object-fit: fill;
+    border-radius: 8px;
+}
+
+.estreno-titulo {
+    font-family: "Creato Display";
+    font-size: 11px;
+    color: white;
+    text-align: center;
+    margin-top: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.opiniones {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.opiniones h2 {
+    margin-bottom: 40px;
+}
+
+.opiniones-cards {
+    display: flex;
+    gap: 130px;
+}
+
+.review-card {
+    width: 450px;
+    flex: none;
+    background-color: #303136;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* PARTE SUPERIOR */
+
+.review-top {
+    height: 260px;
+    position: relative;
+}
+
+.review-top img {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: -60px;
+
+    width: calc(100% - 30px);
+    height: 270px;
+
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.review-bottom {
+    padding: 80px 15px 15px;
+}
+
+/* PARTE SUPERIOR */
+
+.review-top {
+    height: 260px;
+    position: relative;
+}
+
+.review-top img {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: -60px;
+
+    width: calc(100% - 30px);
+    height: 300px;
+
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.review-bottom {
+    padding: 80px 15px 15px;
+}
+
+.review-bottom h3 {
+    font-size: 18px;
+    letter-spacing: 4px;
+    margin-bottom: 5px;
+}
+
+.review-tipo {
+    display: inline-block;
+
+    padding: 4px 8px;
+
+    border: 1px solid #555;
+    border-radius: 4px;
+
+    color: #777;
+    font-size: 11px;
+
+    font-family: "Creato Display Regular";
+}
+
+.review-linea {
+    height: 1px;
+    background-color: #777;
+    margin: 12px 0;
+}
+
+.review-score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-texto h4 {
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+}
+
+.review-texto p {
+    font-size: 9px;
+    color: #999;
+    letter-spacing: 1px;
+}
+
+.review-numero {
+    width: 48px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Creato Display";
+    font-size: 22px;
+
+    color: black;
+
+    border-radius: 3px;
+}
+
+/* BARRA */
+
+.review-barra {
+    display: flex;
+    gap: 3px;
+    margin-top: 10px;
+}
+
+.review-barra div {
+    height: 6px;
+    border-radius: 20px;
+}
+
+/* COLORES */
+
+.amarillo {
+    background-color: #F8D15C;
+}
+
+.rojo {
+    background-color: #9C2A1F;
+}
+
+.verde {
+    background-color: #176E1F;
+}
+
+
+.timeline-home h2 {
+    margin-bottom: 40px;
+}
+
+.botones {
+    display: flex;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.proximos-eventos h2 {
+    margin-bottom: 40px;
+}
+
+img.borde {
+    border: 2px solid #ffffff;
+}
+
+.comentarios {
+    margin-bottom: 100px;
+}
+
+.comentarios h2 {
+    margin-bottom: 40px;
+}
+
+.comentarios-grid {
+    display: flex;
+    gap: 120px;
+
+}
+
+.comentario-card {
+    border: 3px solid #9C2A1F;
+    background-color: #1a1a1a;
+
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    gap: 14px;
+    width: 750px;
+    height: 300px;
+}
+
+.comentario-card img {
+    border: 3px solid #9C2A1F;
+    width: 180px;
+    height: 230px;
+    object-fit: FIT;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.comentario-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+}
+
+.comentario-usuario {
+    color: white;
+    font-family: "Creato Display";
+    font-size: 24px;
+}
+
+.comentario-tiempo {
+    color: #666;
+    font-family: "Creato Display Regular";
+    font-size: 13px;
+}
+
+.comentario-estrellas {
+    color: #F8D15C;
+    font-size: 24px;
+}
+
+.comentario-texto {
+    color: #aaa;
+    font-family: "Creato Display Regular";
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.comentario-acciones {
+    border: none;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.comentario-acciones img {
+    border: none;
+
+
+}
+
+.comentario-like {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.comentario-responder {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.comentario-guardar {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.comentario-acciones button img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+
+.resenas {
+    margin-bottom: 100px;
+}
+
+.resenas h2 {
+    margin-bottom: 40px;
+}
+
+.resenas-grid {
+    display: flex;
+    gap: 120px;
+}
+
+.resena-card {
+    background-color: #1a1a1a;
+    border: 3px solid #9C2A1F;
+    border-radius: 16px;
+    display: flex;
+    width: 750px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.resena-card>img {
+    border: 3px solid #9C2A1F;
+    width: 180px;
+    height: 230px;
+    object-fit: fit;
+    border-radius: 8px;
+    flex-shrink: 0;
+    margin: 16px 0 16px 16px;
+}
+
+.resena-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+    padding: 16px;
+}
+
+.resena-puntaje {
+    color: #F8D15C;
+    font-family: "Creato Display";
+    font-size: 26px;
+    text-align: right;
+}
+
+.resena-puntaje span {
+    color: #F8D15C;
+    font-size: 22px;
+}
+
+.resena-titulo {
+    color: white;
+    font-family: "Heading Now Medium";
+    font-size: 40px;
+    margin-bottom: -10px !important;
+}
+
+.resena-texto {
+    color: #ffffff;
+    font-family: "Creato Display Regular";
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.resena-acciones {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.resena-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.resena-usuario {
+    color: white;
+    font-family: "Creato Display Regular";
+    font-size: 14px;
+    flex: 1;
+}
+
+.resena-like {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.resena-like img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+
+
+.titulo h1 {
+    font-size: 60px;
+    color: white;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+
+
+.pelis-noticias h2 {
+    margin-bottom: 40px;
+}
 
 
 
 
+.borde {
+    border: 3px solid #ffffff;
+}
 
 
+.borde>img {
+    border: none;
+    width: 180px;
+    height: 230px;
+    object-fit: fit;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+.refondo { background-color: black !important;}
+
+
+.event {
+    position: relative;
+    background: linear-gradient(to right, transparent 50%, black 50%);
+}
+
+.event::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url(imagenes/fondo.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: left;
+    opacity: 0.3;
+    border-radius: 16px;
+    z-index: 0;
+}
+
+.event > * {
+    position: relative;
+    z-index: 1;
+}
 /* FOOTER */
 
 .footer {
