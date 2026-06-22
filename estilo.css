@@ -20,9 +20,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html, body { overflow-x: hidden; }
 body {
-    margin: 20px;
+    margin: 0;                /* en vez de 20px */
     background-color: black;
 }
 
@@ -48,8 +48,8 @@ h1 {
 /* NAVBAR */
 
 .navbar {
-    position: fixed;
-    top: 0;
+     position: fixed;
+    top: 0; left: 0; right: 0; 
     width: 100%;
 
     background-color: black;
@@ -909,8 +909,10 @@ main {
 }
 
 .opiniones-cards {
-    display: flex;
-    gap: 130px;
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 100%
 }
 
 .review-card {
@@ -1355,7 +1357,7 @@ img.borde {
 
 .footer {
     background-color: rgb(31, 31, 31);
-    margin: -20px;
+    margin: 0px;
     padding: 40px;
 }
 
@@ -1418,4 +1420,39 @@ main,
 .footer {
     padding-left: 120px;
     padding-right: 120px;
+}
+/* Contenedores de filas: que puedan envolver y compartir espacio */
+
+.comentarios-grid,
+.resenas-grid,
+.cardstendencia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;                /* bajá los gap gigantes */
+    justify-content: space-between;
+}
+
+.review-card,
+.comentario-card,
+.resena-card {
+    width: auto;
+    flex: 1 1 420px;          /* crece y se achica, mínimo 420 */
+    max-width: 100%;
+    height: auto;             /* sacá el height fijo de 300px */
+}
+
+.cardstendencia img {
+    flex: 1 1 0;
+    width: 100%;
+    height: auto;
+    max-width: 220px;
+}
+
+.timeline-linea { gap: 40px; }
+
+.banner-info { margin-left: 0; }   /* posicionalo con grid/padding, no con 500px */
+
+main, .footer {
+    padding-left: clamp(24px, 6vw, 120px);
+    padding-right: clamp(24px, 6vw, 120px);
 }
