@@ -1,0 +1,249 @@
+<html>
+
+<head>
+    <title>Cinéfilos Oficial</title>
+    <link rel="icon" type="image/png" href="imagenes/icono.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mi primera pagina web">
+    <meta name="language" content="es">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+       <nav class="navbar">
+       <button class="hamburguesa">
+            <img src="imagenes/menuhamburguesa.png" alt="Menú">
+        </button>
+       
+        <div class="logo">
+            <a href="index.html">
+                <img src="imagenes/logo.png" alt="Logo">
+            </a>
+        </div>
+        
+        <ul class="menu">
+            <li><a href="novedades.html">NOVEDADES</a></li>
+            <li><a href="eventos.html">EVENTOS</a></li>
+            <li><a href="social.html">SOCIAL</a></li>
+            <li><a href="recomendados.html">RECOMENDADOS</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+           <li class="solo-mobile"><a href="perfil.html">CUENTA</a></li>
+        </ul>
+
+        <div class="extras">
+            <button id="btnBuscar">
+                <img src="imagenes/lupa.png" alt="Buscar">
+            </button>
+            <input type="search" id="busqueda" placeholder="Buscar...">
+            <a class="notif">
+                <img src="imagenes/notifications.png" alt="Usuario">
+            </a>
+            <a href="perfil.html" class="usuario">
+                <img src="imagenes/usuario.png" alt="Usuario">
+            </a>
+        </div>
+    </nav>
+    <main>
+
+        <!-- HERO -->
+        <section class="hero-pelicula">
+            <div class="hero-pelicula-contenido">
+                <p class="hero-fecha">9 NOV 2023</p>
+                <h1>CUANDO ACECHA LA MALDAD</h1>
+                <p>Los vecinos de un pequeño pueblo rural descubren que un demonio está a punto de nacer entre ellos.
+                    Intentan escapar desesperadamente, pero puede que sea demasiado tarde.</p>
+                <p class="meta">1:40H <span style="color:#9C2A1F;">•</span> DEMIÁN RUGNA <span
+                        style="color:#9C2A1F;">•</span> TERROR, SUSPENSO</p>
+                <p class="hero-imdb"><span>IMDb</span>6.9<span class="hero-imdb-sub">/10</span></p>
+                <div class="hero-botones">
+                    <button class="btn-vermas">★ PUNTUAR ESTA PELÍCULA</button>
+                    <button class="btn-vermas btn-vermas--outline">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="18" height="18">
+                            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                        </svg>
+                        ESCRIBIR RESEÑA
+                    </button>
+                    <button class="btn-vermas btn-vermas--icono">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="18" height="18">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                        </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="pelis-noticias">
+            <h2>OTRAS NOTICIAS</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="imagenes/imagennovedades.png" alt="">
+                    <div class="texto-card">
+                        <h3 class="etiqueta">NOTICIA</h3>
+                        <h3>Ezequiel Rodríguez: de galán en Violetta<br>a referente del terror </br></h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagenes/img2.png" alt="">
+                    <div class="texto-card">
+                        <h3 class="etiqueta">NOTICIA</h3>
+                        <h3>Los productores de "Cuando acecha la maldad" <br>vuelven al Festival de Sitges</BR></h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagenes/img3.png" alt="">
+                    <div class="texto-card">
+                        <h3 class="etiqueta">EVENTO</h3>
+                        <h3>Comienza la notable muestra gratuita de<br>cine de terror en el Centro Cultura</br></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="opiniones-comunidad">
+            <h2>OPINIONES DE LA COMUNIDAD <span style="color: #9C2A1F;">❯</span></h2>
+
+            <div class="opiniones-grid">
+
+                <div class="opinion-escribir">
+                    <div class="opinion-escribir-header">
+                        <img src="imagenes/comentario.png" alt="" width="30">
+                        <div>
+                            <h3>¿QUÉ TE PARECIÓ ESTA PELÍCULA?</h3>
+                            <p>Tu opinión ayuda a otros cinéfilos</p>
+                        </div>
+                    </div>
+                    <div class="estrellas-input">
+                        <span class="estrella-input">☆</span>
+                        <span class="estrella-input">☆</span>
+                        <span class="estrella-input">☆</span>
+                        <span class="estrella-input">☆</span>
+                        <span class="estrella-input">☆</span>
+                    </div>
+                    <div class="textarea-wrapper">
+                        <textarea placeholder="Escribí tu opinión..." disabled></textarea>
+                    </div>
+                    <button class="btn-publicar">PUBLICAR OPINIÓN</button>
+                </div>
+
+                <div class="opinion-card">
+                    <div class="opinion-card-header">
+                        <div class="opinion-usuario-info">
+                            <img src="imagenes/perfil2.png" alt="" class="opinion-avatar">
+                            <span class="opinion-usuario">MARIA_8172</span>
+                        </div>
+                        <div class="opinion-puntaje">
+                            <span style="color: #F8D15C;">★</span>
+                            <span class="opinion-nota">8.2</span>
+                            <span class="opinion-nota-sub">/10</span>
+                        </div>
+                    </div>
+                    <p class="opinion-texto">"ES UNA PELÍCULA DE TERROR CON MAYÚSCULAS QUE VA A POR TODAS Y DA EN EL
+                        CLAVO, MACHACANDO AL PÚBLICO HASTA LA SUMISIÓN Y DEJÁNDONOS TODAVÍA CON GANAS DE MÁS".</p>
+                    <p class="opinion-tiempo">1 AÑO</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="resenas">
+            <h2>TE PODRIA INTERESAR</h2>
+            <div class="resenas-grid">
+
+                <div class="resena-card resena-card--social" style="background-image: url('imagenes/HEREDITARY.png');">
+
+                    <div class="resena-info">
+
+                        <h2 class="resena-titulo">HEREDITARY</h2>
+                        <p class="resena-puntaje">★ 8.4</p>
+                        <p class="resena-texto">AL 92% DE LOS USUARIOS QUE VIERON <span style="color:#9C2A1F;">CUANDO
+                                ACECHA LA MALDAD </span>LES GUSTÓ ESTA PELÍCULA.</p>
+
+                    </div>
+                </div>
+                <div class="resena-card resena-card--social" style="background-image: url('imagenes/DARK.png');">
+
+                    <div class="resena-info">
+
+                        <h2 class="resena-titulo">THE DARK AND <br>THE WICKED</br></h2>
+                        <p class="resena-puntaje">★ 8.1</p>
+                        <p class="resena-texto">AL 89% DE LOS USUARIOS QUE VIERON <span style="color:#9C2A1F;"> CUANDO
+                                ACECHA LA MALDAD </span> LES GUSTÓ ESTA PELÍCULA.</p>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-arriba">
+            <div class="footer-item">
+                <img src="imagenes/logo.png">
+                <p>La comunidad definitiva para <br>los amantes del cine, las series </br> y el streaming.</p>
+                <img src="imagenes/redes.png">
+            </div>
+            <div class="footer-item espaciado">
+                <h3>EXPLORAR</h3>
+                <p>Novedades</p>
+                <p>Eventos</p>
+                <p>Social</p>
+                <p>Recomendados</p>
+                <p>Nosotros</p>
+            </div>
+            <div class="footer-item espaciado">
+                <h3>SOPORTE</h3>
+                <p>Contacto</p>
+                <p>Términos y condiciones</p>
+                <p>Política de privacidad</p>
+            </div>
+            <div class="footer-item">
+                <h3 class="footer-item espaciado">RECIBE NOTICIAS</h3>
+                <p>Suscribite y mantenete al día <br>con los mejores estrenos.</br></p>
+                <input type="email" placeholder="Tu correo electrónico">
+                <button class="btn-unirse">UNIRSE</button>
+            </div>
+        </div>
+
+
+
+        <div class="footer-centro">
+            <p>©2026 Cinéfilos. Todos los derechos reservados</p>
+            <p class="textoizq">Hecho con pasión por el cine.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+
+
+</html>

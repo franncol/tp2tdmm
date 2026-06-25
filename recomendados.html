@@ -2,7 +2,7 @@
 
 <head>
     <title>Cinéfilos Oficial</title>
-    <link rel="icon" type="image/png" href="imagenes/logomobile.png">
+    <link rel="icon" type="image/png" href="imagenes/icono.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mi primera pagina web">
@@ -11,199 +11,246 @@
 </head>
 
 <body>
-
-      
-
     <nav class="navbar">
+       <button class="hamburguesa">
+            <img src="imagenes/menuhamburguesa.png" alt="Menú">
+        </button>
+       
         <div class="logo">
-            <img src="imagenes/logo.png" alt="Logo">
+            <a href="index.html">
+                <img src="imagenes/logo.png" alt="Logo">
+            </a>
         </div>
-
+        
         <ul class="menu">
-            <li><a href="#">NOVEDADES</a></li>
-            <li><a href="#">EVENTOS</a></li>
-            <li><a href="#">SOCIAL</a></li>
-            <li><a href="#">RECOMENDADOS</a></li>
-            <li><a href="#">NOSOTROS</a></li>
+              <li class="solo-mobile"><a href="index.html">INICIO</a></li>
+            <li><a href="novedades.html">NOVEDADES</a></li>
+            <li><a href="eventos.html">EVENTOS</a></li>
+            <li><a href="social.html">SOCIAL</a></li>
+            <li><a href="recomendados.html">RECOMENDADOS</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+           <li class="solo-mobile"><a href="perfil.html">CUENTA</a></li>
         </ul>
 
         <div class="extras">
             <button id="btnBuscar">
                 <img src="imagenes/lupa.png" alt="Buscar">
             </button>
-
             <input type="search" id="busqueda" placeholder="Buscar...">
-
             <a class="notif">
                 <img src="imagenes/notifications.png" alt="Usuario">
             </a>
-            <a href="#" class="usuario">
+            <a href="perfil.html" class="usuario">
                 <img src="imagenes/usuario.png" alt="Usuario">
             </a>
         </div>
     </nav>
-<main>
-
-        <section class="encabezado-recomendados">
-            <h1>RECOMENDADOS</h1>
-            <h3>LO QUE LEEN USUARIOS COMO VOS</h3>
-        </section>
-
-        
 
     <main>
+        <section class="titulo">
+            <h1>RECOMENDADOS</h1>
+            <H4>LO QUE LEEN LOS USUARIOS COMO VOS</H4>
+        </section>
 
-         <!-- 4. tendencias -->
-        <section class="noticias">
-            <h2>TENDENCIAS</h2>
+        <section class="destacada">
+            <div class="destacada-contenido">
+                <span>RECOMENDACIÓN DESTACADA</span>
 
-            <div class="grid-noticias">
+                <h2>DISCLOSURE DAY</h2>
 
-                <article class="noticia">
-                    <img src="imagenes/tendencia1.jpg" alt="">
-                    <h3>¿Dónde ver Sinners? La película con 16 nominaciones a los Oscars 2026</h3>
-                </article>
+                <p>
+                    La película más esperada por la
+                    comunidad esta semana.
+                </p>
 
-                <article class="noticia">
-                    <img src="imagenes/tendencia2.jpg" alt="">
-                    <h3>Scary Movie 6: una vuelta caótica, absurda y divertida a los orígenes de la saga</h3> 
-                </article>
-
-                <article class="noticia">
-                    <img src="imagenes/tendencia3.jpg" alt="">
-                    <h3>Los títulos para disfrutar este fin de semana en streaming</h3>
-                </article>
-
-             <article class="noticia">
-                    <img src="imagenes/tendencia4.jpg" alt="">
-                    <h3>Lo mejor spielberg en este siglo? que dice la critica "el dia de la revelacion"</h3>
-                </article>
-
+                <a href="#" class="btn-ficha">VER FICHA</a>
             </div>
         </section>
- 
- 
-        <!-- 4. Rankings -->
-        <section class="noticias">
+
+
+
+        <section class="pelis-noticias">
+            <h2>TENDENCIAS</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="imagenes/sinners-1080x570.jpg" alt="">
+                    <div class="texto-card">
+                        <h3 class="etiqueta">AGENDA</h3>
+                        <h3>¿Dónde ver Sinners? La película  <BR> con 16 nominaciones a los Oscars 2026</BR></h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagenes/noticia3.png" alt="">
+                    <div class="texto-card">
+                        <h3 class="etiqueta">DESDE LA BUTACA</h3>
+                        <h3>Scary Movie 6: una vuelta caótica, 
+                            <br>absurda y divertida</BR>
+                        </h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagenes/peli3.png" alt="">
+                    <div class="texto-card">
+                        <h3 class="etiqueta">DESTACADO</h3>
+                        <h3>Los títulos para disfrutar <br>este fin de semana en streaming</BR></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ranking">
+
             <h2>RANKINGS</h2>
 
-            <div class="grid-noticias">
+            <div class="top1">
 
-                <article class="noticia">
-                    <img src="imagenes/rankings1.jpg" alt="">
-                    <h3>LAS DE SEPTIEMBRE: 5 películas perfectas para ver en streaming este mes</h3>
-                </article>
+                <div class="poster-grande">
+                    <div class="marcador-wrapper">
+                        <img src="imagenes/Component 33.png" class="marcador-img">
+                        <span class="marcador-numero">1</span>
+                    </div>
+                </div>
 
-                <article class="noticia">
-                    <img src="imagenes/rankings2.jpg" alt="">
-                    <h3>LAS DE OCTUBRE: 5 películas perfectas para ver este mes</h3>
-                </article>
+                <div class="info-top1">
 
-                <article class="noticia">
-                    <img src="imagenes/rankings3.jpg" alt="">
-                    <h3>Las de diciembre: 16 películas para ver en Navidad</h3>
-                </article>
- 
-                <article class="noticia">
-                    <img src="imagenes/rankings4.jpg" alt="">
-                    <h3> halloween en cinefilos: 30 peliculas imperdibles para un buen susto</h3>
-                </article>
+                    <span>LA MÁS RECOMENDADA DEL MES</span>
 
+                    <h3>THE SUBSTANCE</h3>
+
+                    <div class="puntaje-fila">
+                        <p class="estrella-ranking">★</p>
+                        <p>9.4/10 BASADO EN 1.248 OPINIONES</p>
+                    </div>
+
+                    <div class="comentario">
+                        <h4>COMENTARIO DESTACADO</h4>
+
+                        <p>
+                            "Una de las mejores películas que vi en el año.
+                            Incómoda, angustiante y repulsiva."
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="ranking-secundario">
+
+                <div class="ranking-card segundo">
+                    <div class="marcador-wrapper">
+                        <img src="imagenes/Component 34.png" class="marcador-img">
+                        <span class="marcador-numero">2</span>
+                    </div>
+
+                    <div class="contenido-card">
+                        <h3>F1: THE MOVIE</h3>
+                        <div class="puntaje-fila">
+                            <p class="estrella-ranking">★</p>
+                            <p>8.5/10</p>
+                        </div>
+                        <p>Basado en 823 opiniones.</p>
+                    </div>
+                </div>
+
+                <div class="ranking-card tercero">
+                    <div class="marcador-wrapper">
+                        <img src="imagenes/Component 35.png" class="marcador-img">
+                        <span class="marcador-numero">3</span>
+                    </div>
+
+                    <div class="contenido-card">
+                        <h3>WEAPONS</h3>
+                        <div class="puntaje-fila">
+                            <p class="estrella-ranking">★</p>
+                            <p>7.8/10</p>
+                        </div>
+                        <p>Basado en 671 opiniones.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="pelis-noticias">
+            <h2>LA GUIA DEL FIN DE SEMANA</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="imagenes/69fb5441159bd-1140x570.jpg" alt="">
+                    <div class="texto-card">
+                        <h3 class="etiqueta">DESTACADO</h3>
+                        <h3>Streaming: los títulos para ver <BR> este fin de semana </BR></h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagenes/193f628e-f442-446e-9972-bf4ed8e2cdc2_alta-libre-aspect-ratio_default_0_x1079y404-1140x570.jpg"
+                        alt="">
+                    <div class="texto-card">
+                        <h3 class="etiqueta">DESTACADO</h3>
+                        <h3>Streaming: los títulos que <br>tenés que ver este fin de semana</BR></h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagenes/OBSE.jpg" alt="">
+                    <div class="texto-card">
+                        <h3 class="etiqueta">DESDE LA BUTACA</h3>
+                        <h3>“Obsession”, cuando el “amor eterno”
+                            <br>se convierte en una pesadilla</br>
+                        </h3>
+                    </div>
+                </div>
             </div>
         </section>
 
 
-        <!-- 4. la guia del fin de semana -->
-        <section class="noticias">
-            <h2>LA GUÍA DEL FIN DE SEMANA</h2>
+        <section class="destacada2">
+            <div class="destacada-contenido">
+                <span>RECOMENDACIÓN DESTACADA</span>
 
-            <div class="grid-noticias">
+                <h2>CINE ARGENTINO</h2>
 
-                <article class="noticia">
-                    <img src="imagenes/finde1.jpg" alt="">
-                    <h3>Streaming: los títulos para ver este fin de semana</h3>
-                </article>
+                <p>
+                    Descubrí las producciones nacionales más destacadas.
+                </p>
 
-                <article class="noticia">
-                    <img src="imagenes/finde2.jpg" alt="">
-                    <h3>Streaming: los títulos que tenés que ver este fin de semana</h3>
-                </article>
-
-                <article class="noticia">
-                    <img src="imagenes/finde3.jpg" alt="">
-                    <h3>“Obsession”, cuando el “amor eterno” se convierte en una pesadilla</h3>
-                </article>
-
-                 <article class="noticia">
-                    <img src="imagenes/finde4.jpg" alt="">
-                    <h3>hbo lanzo el trailer de la tercera temporada de "house of the dragon"</h3>
-                </article>
-
+                <a href="#" class="btn-ficha">EXPLORAR COLECCIÓN</a>
             </div>
         </section>
 
 
- <!-- 4. Cine argentino -->
-        <section class="noticias">
-            <h2>CINE ARGENTINO</h2>
-
-            <div class="grid-noticias">
-
-                <article class="noticia">
-                    <img src="imagenes/argentino1.jpg" alt="">
-                    <h3>5 motivos para ver La Virgen de la Tosquera</h3>
-                </article>
-
-                <article class="noticia">
-                    <img src="imagenes/argentino2.jpg" alt="">
-                    <h3>La argentina que sorprende en “El diablo viste a la moda 2”</h3>
-                </article>
-
-                <article class="noticia">
-                    <img src="imagenes/argentino3.jpg" alt="">
-                    <h3>El último regalo de Luis Brandoni: dos series póstumas que lo tendrán como protagonista</h3>
-                </article>
-
-                    <article class="noticia">
-                        <img src="imagenes/argentino4.jpg" alt="">
-                        <h3>netflix: ¿ en el barro tendra una tercera temporada?</h3>
-                    </article>
-
-            </div>
-        </section>
-
-         <!-- 4. Recomendado por cinéfilos similares -->
-        <section class="noticias">
+        <section class="pelis-noticias">
             <h2>RECOMENDADO POR CINÉFILOS SIMILARES</h2>
-
-            <div class="grid-noticias">
-
-                <article class="noticia">
-                    <img src="imagenes/cinefilos1.jpg" alt="">
-                    <h3>Prime Video presentó el primer avance de “Vought Rising” la precuela de “The Boys”</h3>
-                </article>
-
-                <article class="noticia">
-                    <img src="imagenes/cinefilos2.jpg" alt="">
-                    <h3>¡Vuelve The Blair Witch Project!</h3>
-                </article>
-
-                <article class="noticia">
-                    <img src="imagenes/cinefilos3.jpg" alt="">
-                    <h3>Bomba en Hollywood: los Premios Óscar cambiarán una regla histórica en su próxima edición</h3>
-                </article>
-
-                 <article class="noticia">
-                    <img src="imagenes/cinefilos4.jpg" alt="">
-                    <h3>con un intenso trailer, hbo confirmo la fecha de estreno de "house of the dragon"</h3>
-                </article>
-                
+            <div class="cards">
+                <div class="card">
+                    <img src="imagenes/vought-rising-trailer-prime-video-0aaa0971-focus-0-0-1479-828-1140x570.jpg"
+                        alt="">
+                    <div class="texto-card">
+                        <h3 class="etiqueta">DESTACADO</h3>
+                        <h3>Prime Video presentó el primer avance <BR> de “Vought Rising”</BR></h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagenes/b_blair1.jpg" alt="">
+                    <div class="texto-card">
+                        <h3 class="etiqueta">AGENDA</h3>
+                        <h3>¡Vuelve The Blair Witch Project!</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagenes/23GG36SKNRDVNMLGOIGY5Y3GQE-768x512.jpg" alt="">
+                    <div class="texto-card">
+                        <h3 class="etiqueta">DESTACADO</h3>
+                        <h3>Bomba en Hollywood: los Premios Óscar <br>cambiarán una regla histórica</br></h3>
+                    </div>
+                </div>
             </div>
         </section>
+
 
 
     </main>
-
 
 
     <footer class="footer">
@@ -231,7 +278,7 @@
                 <h3 class="footer-item espaciado">RECIBE NOTICIAS</h3>
                 <p>Suscribite y mantenete al día <br>con los mejores estrenos.</br></p>
                 <input type="email" placeholder="Tu correo electrónico">
-                <button>UNIRSE</button>
+                <button class="btn-unirse">UNIRSE</button>
             </div>
         </div>
 

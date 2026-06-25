@@ -8,23 +8,30 @@
     <meta name="description" content="Mi primera pagina web">
     <meta name="language" content="es">
     <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
     <nav class="navbar">
+       <button class="hamburguesa">
+            <img src="imagenes/menuhamburguesa.png" alt="Menú">
+        </button>
+       
         <div class="logo">
             <a href="index.html">
                 <img src="imagenes/logo.png" alt="Logo">
             </a>
         </div>
-
+        
         <ul class="menu">
+              <li class="solo-mobile"><a href="index.html">INICIO</a></li>
             <li><a href="novedades.html">NOVEDADES</a></li>
             <li><a href="eventos.html">EVENTOS</a></li>
             <li><a href="social.html">SOCIAL</a></li>
-            <li><a href="#">RECOMENDADOS</a></li>
-            <li><a href="#">NOSOTROS</a></li>
+            <li><a href="recomendados.html">RECOMENDADOS</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+           <li class="solo-mobile"><a href="perfil.html">CUENTA</a></li>
         </ul>
 
         <div class="extras">
@@ -35,47 +42,73 @@
             <a class="notif">
                 <img src="imagenes/notifications.png" alt="Usuario">
             </a>
-            <a class="usuario">
+            <a href="perfil.html" class="usuario">
                 <img src="imagenes/usuario.png" alt="Usuario">
             </a>
         </div>
     </nav>
 
+
     <main>
-
         <section class="hero-carousel">
-            <button class="flecha izquierda"><img src="imagenes/flechaizquierda.png" alt="anterior"></button>
 
-            <div class="slide activo">
-                <img src="imagenes/destacado2.png" alt="">
-                <div class="texto-carrusel">
-                    <h2 class="etiqueta">DESTACADO</h2>
-                    <h2>La historia real detrás de Criaturas luminosas, <br>la película que emociona y arrasa en
-                        Netflix</h2>
+            <button class="flecha izquierda">
+                <img src="imagenes/flechaizquierda.png" alt="Anterior">
+            </button>
+
+            <div class="viewport">
+
+                <div class="slides">
+
+                    <div class="slide activo">
+                        <img src="imagenes/destacado2.png" alt="">
+                        <div class="texto-carrusel">
+                            <h2 class="etiqueta">DESTACADO</h2>
+                            <h2>
+                                La historia real detrás de Criaturas luminosas,
+                                <br>la película que emociona y arrasa en Netflix
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="imagenes/vought-rising-trailer-prime-video-0aaa0971-focus-0-0-1479-828-1140x570.jpg"
+                            alt="">
+                        <div class="texto-carrusel">
+                            <h2 class="etiqueta">DESTACADO</h2>
+                            <h2>
+                                Prime Video presentó el primer avance de
+                                <br>“Vought Rising”, la precuela de “The Boys”
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="imagenes/destacado3.jpg" alt="">
+                        <div class="texto-carrusel">
+                            <h2 class="etiqueta">DESTACADO</h2>
+                            <h2>
+                                La serie que logró algo impensado:
+                                <br>convencer a Nicolas Cage de hacer televisión
+                            </h2>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
 
-            <div class="slide">
-                <img src="imagenes/destacado1.jpg" alt="">
-                <div class="texto-carrusel">
-                    <h2 class="etiqueta">DESTACADO</h2>
-                    <h2>Prime Video presentó el primer avance de “Vought Rising” <br>la
-                        precuela de “The Boys”</br>
-                    </h2>
-                </div>
+            <button class="flecha derecha">
+                <img src="imagenes/flechaderecha.png" alt="Siguiente">
+            </button>
+
+            <div class="carrusel-indicadores">
+                <span class="indicador activo"></span>
+                <span class="indicador"></span>
+                <span class="indicador"></span>
             </div>
 
-            <div class="slide">
-                <img src="imagenes/destacado3.jpg" alt="">
-                <div class="texto-carrusel">
-                    <h2 class="etiqueta">DESTACADO</h2>
-                    <h2>La serie que logró algo impensado: <br> convencer a Nicolas Cage de hacer televisión</br> </h2>
-                </div>
-            </div>
-
-            <button class="flecha derecha"><img src="imagenes/flechaderecha.png" alt="siguiente"></button>
         </section>
-
         <!-- 2. Próximos estrenos -->
         <section class="pelis-noticias">
             <div class="cards">
@@ -98,7 +131,7 @@
                     <img src="imagenes/peli3.png" alt="">
                     <div class="texto-card">
                         <h3 class="etiqueta">DESTACADO</h3>
-                        <h3>Spider Noir: la nueva serie de Nicolas Cage</h3>
+                        <h3>Spider Noir: la nueva serie <br>de Nicolas Cage </br></h3>
                     </div>
                 </div>
             </div>
@@ -106,12 +139,14 @@
 
         <!-- 3. Recomendados -->
         <section class="peliculas">
-            <h2>EN TENDENCIA <span style="color: #9C2A1F;">❯</span></h2>
+            <h2>EN TENDENCIA</h2>
 
             <div class="cardstendencia">
                 <img src="imagenes/tendencia1.png" alt="as">
                 <img src="imagenes/tendencia2.png" alt="as">
-                <img src="imagenes/tendencia3.png" alt="as">
+                <a href="pelicula.html">
+                    <img src="imagenes/tendencia3.png" alt="as">
+                </a>
                 <img src="imagenes/tendencia4.png" alt="as">
                 <img src="imagenes/tendencia5.png" alt="as">
 
@@ -120,7 +155,7 @@
 
 
         <section class="opiniones">
-            <h2>QUÉ OPINA LA COMUNIDAD <span style="color: #9C2A1F;">❯</span></h2>
+            <h2>QUÉ OPINA LA COMUNIDAD</h2>
             <div class="opiniones-cards">
                 <article class="review-card">
 
@@ -180,14 +215,14 @@
                             </div>
 
                             <div class="review-numero rojo">
-                                67
+                                55
                             </div>
 
                         </div>
 
                         <div class="review-barra">
-                            <div class="positivo amarillo" style="width:67%;"></div>
-                            <div class="negativo rojo" style="width:33%;"></div>
+                            <div class="positivo amarillo" style="width:55%;"></div>
+                            <div class="negativo rojo" style="width:45%;"></div>
                         </div>
 
                     </div>
@@ -203,7 +238,7 @@
 
                     <div class="review-bottom">
 
-                        <h3>TOY STORY 5</h3>
+                        <h3>TOY STORY</h3>
 
                         <span class="review-tipo">PELÍCULA</span>
 
@@ -216,15 +251,15 @@
                                 <p>BASADO EN 10K CRÍTICAS</p>
                             </div>
 
-                            <div class="review-numero amarillo">
-                                67
+                            <div class="review-numero verde">
+                                89
                             </div>
 
                         </div>
 
                         <div class="review-barra">
-                            <div class="positivo amarillo" style="width:67%;"></div>
-                            <div class="negativo rojo" style="width:33%;"></div>
+                            <div class="positivo amarillo" style="width:85%;"></div>
+                            <div class="negativo rojo" style="width:15%;"></div>
                         </div>
 
                     </div>
@@ -234,7 +269,7 @@
             </div>
         </section>
         <section class="timeline-home">
-            <h2>PRÓXIMOS ESTRENOS <span style="color: #9C2A1F;">❯</span></h2>
+            <h2>PRÓXIMOS ESTRENOS</h2>
 
             <div class="timeline">
 
@@ -365,9 +400,11 @@
                     </div>
                 </div>
         </section>
-       
+
+
+
         <section class="proximos-eventos">
-            <h2>PRÓXIMOS EVENTOS <span style="color: #9C2A1F;">❯</span></h2>
+            <h2>EVENTOS <span style="color: #9C2A1F;">❯</span></h2>
             <div class="seccion-comunidad borde event">
                 <div class="comunidad-bloque home">
 
@@ -441,16 +478,25 @@
                 <img src="imagenes/tendencia3.png" alt="as">
                 <img src="imagenes/tendencia4.png" alt="as">
                 <img src="imagenes/tendencia5.png" alt="as">
-    
+
             </div>
             <DIV class="botones">
-                <a class="btn-vermás">PARA VER DESPUÉS</a>
-                <a class="btn-vermás">NOMINADAS AL OSCAR</a>
-                <a class="btn-vermás">PELIS DE VERANO</a>
+                <a class="btn-vermas">PARA VER DESPUÉS</a>
+                <a class="btn-vermas">NOMINADAS AL OSCAR</a>
+                <a class="btn-vermas">PELIS DE VERANO</a>
             </DIV>
         </section>
+        <section class="tusrecomendados">
+            <h2>RECOMENDADOS</h2>
+            <p>MIRÁ LAS RECOMENDACIONES SEGÚN TU LISTA</p>
 
- <section class="noticias">
+            <div class="tusrecomendados-grid">
+                <img src="imagenes/reco1.png" alt="">
+                <img src="imagenes/reco2.png" alt="">
+                <img src="imagenes/reco3.png" alt="">
+            </div>
+        </section>
+        <section class="noticias">
             <h2>NOTICIAS <span style="color: #9C2A1F;">❯</span></h2>
 
             <div class="grid-noticias">
@@ -491,8 +537,6 @@
             </div>
         </section>
 
-
-
     </main>
 
 
@@ -521,7 +565,7 @@
                 <h3 class="footer-item espaciado">RECIBE NOTICIAS</h3>
                 <p>Suscribite y mantenete al día <br>con los mejores estrenos.</br></p>
                 <input type="email" placeholder="Tu correo electrónico">
-                <button>UNIRSE</button>
+                <button class="btn-unirse">UNIRSE</button>
             </div>
         </div>
 

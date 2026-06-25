@@ -12,48 +12,58 @@
 <body>
 
     <nav class="navbar">
+        <button class="hamburguesa">
+            <img src="imagenes/menuhamburguesa.png" alt="Menú">
+        </button>
+
         <div class="logo">
             <a href="index.html">
                 <img src="imagenes/logo.png" alt="Logo">
             </a>
         </div>
+
         <ul class="menu">
+            <li class="solo-mobile"><a href="index.html">INICIO</a></li>
             <li><a href="novedades.html">NOVEDADES</a></li>
             <li><a href="eventos.html">EVENTOS</a></li>
             <li><a href="social.html">SOCIAL</a></li>
-            <li><a href="#">RECOMENDADOS</a></li>
-            <li><a href="#">NOSOTROS</a></li>
+            <li><a href="recomendados.html">RECOMENDADOS</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+            <li class="solo-mobile"><a href="perfil.html">CUENTA</a></li>
         </ul>
+
         <div class="extras">
             <button id="btnBuscar">
                 <img src="imagenes/lupa.png" alt="Buscar">
             </button>
             <input type="search" id="busqueda" placeholder="Buscar...">
             <a class="notif">
-                <img src="imagenes/notifications.png" alt="Notificaciones">
+                <img src="imagenes/notifications.png" alt="Usuario">
             </a>
-            <a class="usuario">
+            <a href="perfil.html" class="usuario">
                 <img src="imagenes/usuario.png" alt="Usuario">
             </a>
         </div>
     </nav>
+
 
     <main>
         <section class="titulo">
             <h1>NOVEDADES</h1>
         </section>
         <!-- DESTACADO -->
-        <section class="destacado">
+        <a href="noticia.html" class="destacado">
             <img src="imagenes/imagennovedades.png" alt="">
+
             <div class="texto-carrusel">
                 <h2 class="etiqueta">DESTACADO</h2>
                 <h2>Ezequiel Rodríguez: de galán en "Violetta" <br>a referente del terror</h2>
             </div>
-        </section>
+        </a>
 
         <!-- PRÓXIMOS ESTRENOS -->
         <section class="timeline-home">
-            <h2>PRÓXIMOS ESTRENOS <span style="color: #9C2A1F;">❯</span></h2>
+            <h2>PRÓXIMOS ESTRENOS</h2>
 
             <div class="timeline">
 
@@ -186,7 +196,7 @@
         </section>
 
         <section class="noticias">
-            <h2>ÚLTIMAS NOTICIAS <span style="color: #9C2A1F;">❯</span></h2>
+            <h2>DESTACADOS</h2>
 
             <div class="grid-noticias">
 
@@ -210,7 +220,7 @@
         </section>
 
         <section class="noticias">
-            <h2>ENTREVISTAS <span style="color: #9C2A1F;">❯</span></h2>
+            <h2>ENTREVISTAS</h2>
 
             <div class="grid-noticias">
                 <article class="noticia">
@@ -233,7 +243,7 @@
             </div>
         </section>
         <section class="pelis-noticias">
-            <h2>ESTRENOS <span style="color: #9C2A1F;">❯</span></h2>
+            <h2>ESTRENOS</h2>
             <div class="cards">
                 <div class="card">
                     <img src="imagenes/peli1.png" alt="">
@@ -254,7 +264,7 @@
                     <img src="imagenes/peli3.png" alt="">
                     <div class="texto-card">
                         <h3 class="etiqueta">DESTACADO</h3>
-                        <h3>Spider Noir: la nueva serie de Nicolas Cage</h3>
+                        <h3>Spider Noir: la nueva serie <br>de Nicolas Cage </br></h3>
                     </div>
                 </div>
             </div>
@@ -288,7 +298,7 @@
                 <h3 class="footer-item espaciado">RECIBE NOTICIAS</h3>
                 <p>Suscribite y mantenete al día <br>con los mejores estrenos.</br></p>
                 <input type="email" placeholder="Tu correo electrónico">
-                <button>UNIRSE</button>
+                <button class="btn-unirse">UNIRSE</button>
             </div>
         </div>
         <div class="footer-centro">

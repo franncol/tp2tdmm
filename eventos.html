@@ -11,19 +11,25 @@
 </head>
 
 <body>
-    <nav class="navbar">
+      <nav class="navbar">
+       <button class="hamburguesa">
+            <img src="imagenes/menuhamburguesa.png" alt="Menú">
+        </button>
+       
         <div class="logo">
             <a href="index.html">
                 <img src="imagenes/logo.png" alt="Logo">
             </a>
         </div>
-
+        
         <ul class="menu">
+              <li class="solo-mobile"><a href="index.html">INICIO</a></li>
             <li><a href="novedades.html">NOVEDADES</a></li>
             <li><a href="eventos.html">EVENTOS</a></li>
             <li><a href="social.html">SOCIAL</a></li>
-            <li><a href="#">RECOMENDADOS</a></li>
-            <li><a href="#">NOSOTROS</a></li>
+            <li><a href="recomendados.html">RECOMENDADOS</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+           <li class="solo-mobile"><a href="perfil.html">CUENTA</a></li>
         </ul>
 
         <div class="extras">
@@ -34,11 +40,12 @@
             <a class="notif">
                 <img src="imagenes/notifications.png" alt="Usuario">
             </a>
-            <a class="usuario">
+            <a href="perfil.html" class="usuario">
                 <img src="imagenes/usuario.png" alt="Usuario">
             </a>
         </div>
     </nav>
+
     <main>
 
         <!-- HERO -->
@@ -47,9 +54,9 @@
                 <h1>EVENTOS</h1>
                 <p>Estrenos, festivales, avant premières y encuentros para vivir el cine en comunidad.</p>
 
-                <h2>FESTIVAL DE CINE INTERNACIONAL DE MAR DEL PLATA</h2>
+                <h2>FESTIVAL DE CINE <br>INTERNACIONAL DE MAR DEL PLATA</br></h2>
                 <p class="meta">MAR DEL PLATA, ARG - 15 AL 24 DE JULIO</p>
-                <a class="btn-vermás">VER MÁS</a>
+                <a class="btn-vermas">VER MÁS</a>
             </div>
         </section>
 
@@ -287,7 +294,7 @@
                 <h3 class="footer-item espaciado">RECIBE NOTICIAS</h3>
                 <p>Suscribite y mantenete al día <br>con los mejores estrenos.</br></p>
                 <input type="email" placeholder="Tu correo electrónico">
-                <button>UNIRSE</button>
+                <button class="btn-unirse">UNIRSE</button>
             </div>
         </div>
 
