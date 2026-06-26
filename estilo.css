@@ -2657,15 +2657,24 @@ main,
     padding-right: clamp(24px, 6vw, 120px);
 }
 
-* {
+.resenas-grid,
+.comentarios-grid,
+.cardstendencia,
+.opiniones-cards,
+.debates-grid,
+.imagenes-noti {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 
-*::-webkit-scrollbar {
+.resenas-grid::-webkit-scrollbar,
+.comentarios-grid::-webkit-scrollbar,
+.cardstendencia::-webkit-scrollbar,
+.opiniones-cards::-webkit-scrollbar,
+.debates-grid::-webkit-scrollbar,
+.imagenes-noti::-webkit-scrollbar {
     display: none;
 }
-
 .scroll-wrapper {
     position: relative;
 }
@@ -3569,7 +3578,7 @@ h3 a {
         width: 100% !important;
         justify-content: space-around !important;
         gap: 0 !important;
-        border-top: none !important;
+       border-top: none !important;
         border-bottom: none !important;
         padding: 16px 0 !important;
     }
