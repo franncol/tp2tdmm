@@ -3569,8 +3569,8 @@ h3 a {
         width: 100% !important;
         justify-content: space-around !important;
         gap: 0 !important;
-        border-top: 1px solid #F8D15C !important;
-        border-bottom: 1px solid #F8D15C !important;
+        border-top: none !important;
+        border-bottom: none !important;
         padding: 16px 0 !important;
     }
 
