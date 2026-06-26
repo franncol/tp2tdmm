@@ -13,6 +13,13 @@
     src: url("fuentes/HeadingNowTrial-55Medium.ttf");
 }
 
+
+@font-face {
+    font-family: "Heading Now";
+    src: url("fuentes/HeadingNowTrial-54Regular.ttf");
+}
+
+
 /* GENERAL */
 
 * {
@@ -28,7 +35,6 @@ body {
 
 body {
     margin: 0;
-    /* en vez de 20px */
     background-color: black;
 }
 
@@ -75,6 +81,7 @@ h1 {
     position: static;
     transform: none;
 }
+
 .logo img {
     height: 40px;
     width: auto;
@@ -1503,7 +1510,6 @@ img.borde {
     scroll-snap-align: start;
     flex-shrink: 0;
     width: calc(50% - 20px);
-    /* era calc(50% - 80px) */
     height: 400px;
 }
 
@@ -1554,7 +1560,7 @@ img.borde {
     margin-top: auto;
     margin-bottom: 20px;
     margin-left: -194px;
-    /* 180 + 14 */
+
     width: calc(100% + 194px);
 
     display: flex;
@@ -1967,6 +1973,7 @@ img.borde {
 .usuario-info h1 {
     font-size: 32px;
     color: #ffffff;
+    font-family: "Heading Now";
 
 }
 
@@ -2523,7 +2530,7 @@ main,
     padding-right: 120px;
 }
 
-/* contenedores de filas */
+/* reseñas y contenedores de cards */
 
 .resenas-grid,
 .cardstendencia {
@@ -2690,11 +2697,18 @@ main,
     background-color: #F8D15C;
     color: black;
 }
+
 .solo-mobile {
     display: none;
 }
+
 .solo-mobile {
     display: none;
+}
+
+h2 a,
+h3 a {
+    font-family: inherit;
 }
 
 @media (max-width: 768px) {
@@ -2744,7 +2758,7 @@ main,
     }
 
     .menu li a {
-        font-size: 32px;
+        font-size: 24px;
         color: white;
         font-family: "Heading Now Medium";
     }
@@ -2766,10 +2780,21 @@ main,
     }
 
     /* TEXTOS */
-    h1 { font-size: 32px !important; }
-    h2 { font-size: 24px !important; }
-    h3 { font-size: 20px !important; }
-    p { font-size: 14px !important; }
+    h1 {
+        font-size: 32px !important;
+    }
+
+    h2 {
+        font-size: 24px !important;
+    }
+
+    h3 {
+        font-size: 20px !important;
+    }
+
+    p {
+        font-size: 14px !important;
+    }
 
     /* HERO */
     .hero-carousel,
@@ -2789,158 +2814,161 @@ main,
         font-size: 18px !important;
     }
 
-   .hero-carousel {
-    height: 280px;
-    margin-bottom: 50px;
-}
+    .hero-carousel {
+        height: 280px;
+        margin-bottom: 50px;
+    }
 
- .hero-carousel img {
+    .hero-carousel img {
         object-fit: cover;
         object-position: center top;
     }
-.destacado img {
-    height: 240px;
-    object-fit: cover;
-    object-position: center top;
-}
-/* flechas visibles */
 
-.flecha {
-    display: block;
-    z-index: 100;
-}
+    .destacado img {
+        height: 240px;
+        object-fit: cover;
+        object-position: center top;
+    }
 
-.flecha img {
-    width: 35px;
-    height: 35px;
-}
+    /* flechas */
 
-.izquierda {
-    left: 10px;
-}
+    .flecha {
+        display: block;
+        z-index: 100;
+    }
 
-.derecha {
-    right: 10px;
-}
+    .flecha img {
+        width: 35px;
+        height: 35px;
+    }
 
-/* texto más chico y más arriba */
+    .izquierda {
+        left: 10px;
+    }
 
-.texto-carrusel {
-    left: 15px;
-    right: 15px;
-    bottom: 45px;
-}
+    .derecha {
+        right: 10px;
+    }
 
-.texto-carrusel h2 {
-    font-size: 16px !important;
-    line-height: 1.3;
-    padding: 4px 8px;
-}
 
-.texto-carrusel .etiqueta {
-    font-size: 12px !important;
-}
 
-/* indicadores abajo del todo */
+    .texto-carrusel {
+        left: 15px;
+        right: 15px;
+        bottom: 45px;
+    }
 
-.carrusel-indicadores {
-    bottom: 12px;
-}
+    .texto-carrusel h2 {
+        font-size: 16px !important;
+        line-height: 1.3;
+        padding: 4px 8px;
+    }
 
-.indicador {
-    width: 8px;
-    height: 8px;
-}
-.banner-descuentos {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    .texto-carrusel .etiqueta {
+        font-size: 12px !important;
+    }
 
-    padding: 20px;
-    min-height: 220px;
+    /* indicadores abajo del todo */
 
-    position: relative;
-}
+    .carrusel-indicadores {
+        bottom: 12px;
+    }
 
-/* overlay oscuro real (te faltaba esto porque no lo tenías en base) */
-.banner-descuentos::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.2);
-    z-index: 1;
-}
+    .indicador {
+        width: 8px;
+        height: 8px;
+    }
 
-.banner-info {
-    position: relative;
-    z-index: 2;
+    .banner-descuentos {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
 
-    margin-left: 0 !important;
-    text-align: left;
+        padding: 20px;
+        min-height: 220px;
 
-    max-width: 100%;
-}
+        position: relative;
+    }
 
-/* tipografía mobile */
-.banner-info small {
-   font-family: "Heading Now Medium";
-    font-size: 14px;
-    letter-spacing: 2px;
-}
+    /* overlay oscuro real (te faltaba esto porque no lo tenías en base) */
+    .banner-descuentos::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
 
-.banner-info h2 {
-    font-size: 18px !important;
-    line-height: 1.2;
-       font-family: "Heading Now Medium";
-}
+    .banner-info {
+        position: relative;
+        z-index: 2;
 
-.banner-info h3 {
-    font-size: 12px !important;
-    font-weight: 400;
-    color: #ccc;
-    margin-top: 5px;
-}
+        margin-left: 0 !important;
+        text-align: left;
 
-/* botón abajo tipo CTA mobile */
-.btn-beneficios {
-    position: relative;
-    z-index: 2;
+        max-width: 100%;
+    }
 
-    width: 100%;
-    margin-top: 15px;
+    /* fuente mobile */
+    .banner-info small {
+        font-family: "Heading Now Medium";
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
 
-    font-size: 12px;
-    padding: 10px;
+    .banner-info h2 {
+        font-size: 18px !important;
+        line-height: 1.2;
+        font-family: "Heading Now Medium";
+    }
 
-    border-radius: 10px;
-}
+    .banner-info h3 {
+        font-size: 12px !important;
+        font-weight: 400;
+        color: #ccc;
+        margin-top: 5px;
+    }
+
+    .btn-beneficios {
+        position: relative;
+        z-index: 2;
+
+        width: 100%;
+        margin-top: 15px;
+
+        font-size: 12px;
+        padding: 10px;
+
+        border-radius: 10px;
+    }
+
     /* FILAS HORIZONTALES */
- .cards,
-.resenas-grid,
-.comentarios-grid,
-.tusrecomendados-grid,
-.opiniones-cards,
-.debates-grid,
-.ranking-secundario,
-.imagenes-noti {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-}
+    .cards,
+    .resenas-grid,
+    .comentarios-grid,
+    .tusrecomendados-grid,
+    .opiniones-cards,
+    .debates-grid,
+    .ranking-secundario,
+    .imagenes-noti {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
 
-  .cards > *,
-.resenas-grid > *,
-.comentarios-grid > *,
-.tusrecomendados-grid > *,
-.opiniones-cards > *,
-.debates-grid > *,
-.ranking-secundario > *,
-.imagenes-noti > * {
-    min-width: 85vw;
-    width: 85vw;
-}
+    .cards>*,
+    .resenas-grid>*,
+    .comentarios-grid>*,
+    .tusrecomendados-grid>*,
+    .opiniones-cards>*,
+    .debates-grid>*,
+    .ranking-secundario>*,
+    .imagenes-noti>* {
+        min-width: 85vw;
+        width: 85vw;
+    }
 
     /* CARDS */
     .card img,
@@ -2948,48 +2976,114 @@ main,
         height: 220px;
     }
 
-    .comentario-card,
-    .resena-card {
+
+
+
+
+
+
+
+
+    .comentarios-grid {
+        display: flex;
+        gap: 16px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-right: 16px;
+    }
+
+    .comentario-card {
         height: auto !important;
         flex-direction: column;
     }
 
+    .comentario-card {
+        flex: 0 0 80vw !important;
+        width: 80vw !important;
+        min-width: 80vw !important;
+        max-width: 80vw !important;
+        scroll-snap-align: start;
+    }
+
     .comentario-card img,
-    .resena-card > img {
+    .resena-card>img {
         width: 100%;
         height: 220px;
         margin: 0;
+        object-fit: cover;
+    }
+
+    .comentario-card img {
+        width: 100%;
+        aspect-ratio: 2 / 3;
+        height: 350px;
+        object-fit: fill;
+        border-radius: 5px;
     }
 
     .comentario-acciones {
+        margin-top: 20px;
         margin-left: 0;
         width: 100%;
     }
-  .cards .card {
+
+    .comentario-estrellas {
+        color: #F8D15C;
+        font-size: 32px !important;
+        margin-top: -5px;
+
+    }
+
+    .debate-footer {
+        flex-wrap: nowrap;
+    }
+
+    .debate-footer .btn-ver {
+        margin-top: 0;
+        flex-shrink: 0;
+    }
+
+    .debate-participantes {
+        font-size: 12PX;
+    }
+
+
+
+
+
+
+
+
+
+
+    .cards .card {
         flex: 0 0 70%;
     }
- .pelis-noticias {
-    display: block;
-    overflow: visible;
-    margin-bottom: 80px;
-}
-.pelis-noticias .cards {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 20px;
-    padding-bottom: 10px;
-    margin-bottom: 0;
-}
 
-.pelis-noticias .cards .card {
-    flex: 0 0 70%;
-    min-width: unset;
-    width: 70% !important;
-    scroll-snap-align: start;
-}
-   .botones {
+    .pelis-noticias {
+        display: block;
+        overflow: visible;
+        margin-bottom: 80px;
+    }
+
+    .pelis-noticias .cards {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 0;
+    }
+
+    .pelis-noticias .cards .card {
+        flex: 0 0 70%;
+        min-width: unset;
+        width: 70% !important;
+        scroll-snap-align: start;
+    }
+
+    .botones {
         display: none;
     }
 
@@ -3052,34 +3146,35 @@ main,
         padding: 20px;
     }
 
-
-
     .equipo-grid {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-.miembro img {
-    width: 100%;
-    aspect-ratio: 3 / 4;
-    object-fit: cover;
-    border-radius: 20px;
-}
-.miembro h3 {
-    font-family: "Heading Now Medium";
-    font-size: 32px;
-    color: #F8D15C;
-    margin-top: 8px;
-    margin-bottom: 1px;
-}
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
 
-.miembro p {
-    color: #ffffff;
-    font-size: 18px;
-    line-height: 1.6;
-}
+    .miembro img {
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .miembro h3 {
+        font-family: "Heading Now Medium";
+        font-size: 32px;
+        color: #F8D15C;
+        margin-top: 8px;
+        margin-bottom: 1px;
+    }
+
+    .miembro p {
+        color: #ffffff;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
     /* FOOTER */
-    
+
     .footer-arriba,
     .footer-centro {
         flex-direction: column;
@@ -3109,35 +3204,37 @@ main,
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-/* PELIS NOTICIAS - TIPOGRAFÍAS MÁS CHICAS */
-.pelis-noticias .card h2,
-.pelis-noticias .card h3 {
-    font-size: 16px !important;
-    line-height: 1.2;
-}
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
-.pelis-noticias .card p {
-    font-size: 13px !important;
-    line-height: 1.3;
-}
+    /* PELIS NOTICIAS - TIPOGRAFÍAS MÁS CHICAS */
+    .pelis-noticias .card h2,
+    .pelis-noticias .card h3 {
+        font-size: 16px !important;
+        line-height: 1.2;
+    }
 
-/* si tenés subtítulos o etiquetas */
-.pelis-noticias .card span,
-.pelis-noticias .card .etiqueta {
-    font-size: 11px !important;
-}
+    .pelis-noticias .card p {
+        font-size: 13px !important;
+        line-height: 1.3;
+    }
 
-/* opcional: título general de la sección */
-.pelis-noticias h2 {
-    font-size: 20px !important;
-}
-/* EN TENDENCIA - MOBILE 2x2 */
-/* EN TENDENCIA - MOBILE 2x2 FIX */
+
+    .pelis-noticias .card span,
+    .pelis-noticias .card .etiqueta {
+        font-size: 11px !important;
+    }
+
+
+    .pelis-noticias h2 {
+        font-size: 20px !important;
+    }
+
+    /* EN TENDENCIAA MOBILE 2x2 */
     .cardstendencia {
         display: grid !important;
         grid-template-columns: 1fr 1fr !important;
@@ -3146,152 +3243,359 @@ main,
         overflow-x: hidden !important;
         width: 100% !important;
     }
-.cardstendencia > * {
-    width: 100% !important;
-    min-width: 0 !important;
-}
-   .cardstendencia > :nth-child(5) {
+
+    .cardstendencia>* {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .cardstendencia> :nth-child(5) {
         display: none;
     }
+
     .opiniones-cards {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    overflow-x: auto !important;
-    gap: 16px;
-    padding-bottom: 10px;
-}
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        gap: 16px;
+        padding-bottom: 10px;
+    }
 
-.opiniones-cards .review-card {
-    flex: 0 0 90% !important;
-    width: 75% !important;
-    min-width: 75% !important;
-}
-.comunidad-bloque.home {
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-.event::before {
-    background-size: cover;
-    background-position: center;
-    opacity: 0.2;
-}
-.tusrecomendados-grid {
-    display: flex !important;
-    flex-direction: column;
-    gap: 20px;
-    overflow: hidden !important;
-}
+    .opiniones-cards .review-card {
+        flex: 0 0 90% !important;
+        width: 75% !important;
+        min-width: 75% !important;
+    }
 
-.tusrecomendados-grid > * {
-    width: 100% !important;
-    min-width: 0 !important;
-}
+    .review-top {
+        height: 160px !important;
+    }
 
-/* Oculta la tercera */
-.tusrecomendados-grid > :nth-child(3) {
-    display: none;
-}
+    .review-top img {
+        height: 180px !important;
+        bottom: -40px !important;
+    }
 
-.tusrecomendados-grid img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 20px;
-}
+    .review-bottom {
+        padding-top: 55px !important;
+    }
 
-.ranking-secundario{
-    display:flex !important;
-    flex-direction:column;
-    gap:18px;
-    overflow:visible !important;
-}
-.top1{
-    background-size: cover;
-    background-position: left center; 
-    background-repeat: no-repeat;
-    overflow: hidden;
-}
- .info-top1 > span,
-    .info-top1 > h3,
-    .info-top1 > .puntaje-fila{
+    .review-bottom h3 {
+        font-size: 28px !important;
+    }
+
+    .comunidad-bloque.home {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .event::before {
+        background-size: cover;
+        background-position: center;
+        opacity: 0.2;
+    }
+
+    .tusrecomendados-grid {
+        display: flex !important;
+        flex-direction: column;
+        gap: 20px;
+        overflow: hidden !important;
+    }
+
+    .tusrecomendados-grid>* {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    /*ESCONDO 3RA PELI*/
+    .tusrecomendados-grid> :nth-child(3) {
+        display: none;
+    }
+
+    .tusrecomendados-grid img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 20px;
+    }
+
+    .ranking-secundario {
+        display: flex !important;
+        flex-direction: column;
+        gap: 18px;
+        overflow: visible !important;
+    }
+
+    .top1 {
+        background-size: cover;
+        background-position: left center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    .info-top1>span,
+    .info-top1>h3,
+    .info-top1>.puntaje-fila {
         padding-left: 50px;
     }
 
-.ranking-card{
-    height:150px !important;
-    width: 100% !important;
-    padding-left:95px; 
-    background-size: cover;
-    background-position:  center; 
-    background-repeat: no-repeat;
-}
+    .ranking-card {
+        height: 150px !important;
+        width: 100% !important;
+        padding-left: 95px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
-.marcador-wrapper{
-    position: absolute;
-    top: -8px;
-    left: 0px;
-}
+    .marcador-wrapper {
+        position: absolute;
+        top: -8px;
+        left: 0px;
+    }
 
-.marcador-img{
-    width: 50px;
-    height: 50px;
-    display: block;
-}
+    .marcador-img {
+        width: 50px;
+        height: 50px;
+        display: block;
+    }
 
-.marcador-numero{
-    position:absolute;
-    top:45%;
-    left:53%;
-   font-family: "Creato Display";
-   font-weight: 800;
-    font-size:20px;
-}
-.contenido-card{
-    margin-left:0 !important;
-    padding:18px 18px 18px 12px;
-    padding-left: 28px !important; 
-    width:100%;
-}
+    .marcador-numero {
+        position: absolute;
+        top: 45%;
+        left: 53%;
+        font-family: "Creato Display";
+        font-weight: 800;
+        font-size: 20px;
+    }
 
-.contenido-card h3{
-    font-size:18px !important;
-    margin-bottom:8px;
-    line-height:1.2;
-}
+    .contenido-card {
+        margin-left: 0 !important;
+        padding: 18px 18px 18px 12px;
+        padding-left: 28px !important;
+        width: 100%;
+    }
 
-.contenido-card p{
-    font-size:13px !important;
-}
+    .contenido-card h3 {
+        font-size: 18px !important;
+        margin-bottom: 8px;
+        line-height: 1.2;
+    }
 
-.contenido-card .puntaje-fila{
-    margin-bottom:10px !important;
-}
+    .contenido-card p {
+        font-size: 13px !important;
+    }
 
-.contenido-card .puntaje-fila p{
-    font-size:14px !important;
-}
+    .contenido-card .puntaje-fila {
+        margin-bottom: 10px !important;
+    }
 
-.estrella-ranking{
-    font-size:18px !important;
-}
-.cards,
-.resenas-grid,
-.comentarios-grid,
-.opiniones-cards,
-.debates-grid,
-.ranking-secundario,
-.imagenes-noti,
-.pelis-noticias .cards {
-    overflow-x: auto;
-    overflow-y: hidden;
-    
-}
-.hero-eventos {
-    margin-top: -100Px;
-    margin-bottom: -0px;
-}
- main {
+    .contenido-card .puntaje-fila p {
+        font-size: 14px !important;
+    }
+
+    .estrella-ranking {
+        font-size: 18px !important;
+    }
+
+    .cards,
+    .resenas-grid,
+    .comentarios-grid,
+    .opiniones-cards,
+    .debates-grid,
+    .ranking-secundario,
+    .imagenes-noti,
+    .pelis-noticias .cards {
+        overflow-x: auto;
+        overflow-y: hidden;
+
+    }
+
+    .debates-grid>.debate-card {
+        min-width: 78vw;
+        width: 78vw;
+        scroll-snap-align: start;
+    }
+
+    .debates-grid {
+        gap: 18px;
+    }
+
+    .resenas-grid {
+        gap: 18px;
+    }
+
+    .resena-card--social {
+        flex: 0 0 78vw !important;
+        width: 78vw !important;
+        min-width: 78vw !important;
+    }
+
+    .comentarios.home .comentarios-grid {
+        display: flex !important;
+        flex-direction: column;
+        overflow: visible !important;
+    }
+
+    .comentarios.home .comentario-card {
+        width: 100% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .comentarios.home .comentarios-grid {
+        padding-right: 0 !important;
+    }
+
+    .comentarios.home .comentarios-grid> :nth-child(n+2) {
+        display: none;
+    }
+
+
+
+    .hero-pelicula {
+
+
+
+        margin-top: -60px !important;
+    }
+
+    .hero-pelicula-contenido {
+        top: auto !important;
+        bottom: 50px !important;
+        transform: none !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        max-width: 100% !important;
+    }
+
+    .hero-pelicula-contenido h1 {
+        font-size: 32px !important;
+        line-height: 1.1 !important;
+        margin-bottom: 12px !important;
+    }
+
+    .hero-pelicula-contenido p {
+        font-size: 16px !important;
+
+    }
+
+    .meta p {
+        font-size: 50px;
+    }
+
+    .hero-imdb {
+        font-size: 14px !important;
+        margin-top: 10px !important;
+    }
+
+    .hero-imdb-sub {
+        font-size: 14px !important;
+    }
+
+    .hero-botones {
+        flex-wrap: wrap !important;
+        gap: 8px !important;
+        margin-top: 12px !important;
+    }
+
+    .hero-botones .btn-vermas {
+        font-size: 11px !important;
+        padding: 0 12px !important;
+        height: 36px !important;
+        margin-top: 0 !important;
+    }
+
+
+
+
+
+
+
+
+    .opiniones-comunidad {
+        margin-top: 40px !important;
+        margin-bottom: 90px !important;
+    }
+
+    .estrellas-input {
+        gap: 12px !important;
+        justify-content: center;
+    }
+
+    .estrella-input {
+        font-size: 50px !important;
+    }
+
+    .opinion-escribir-header h3 {
+        font-size: 18px !important;
+    }
+
+    .opinion-escribir-header p {
+        font-size: 16px !important;
+    }
+
+
+
+    .perfil-header {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0 !important;
+        padding: 0 !important;
+        border-bottom: none !important;
+    }
+
+    .usuario-info {
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 16px !important;
+        width: 100% !important;
+        padding-bottom: 20px !important;
+    }
+
+    .usuario-info img {
+        width: 80px !important;
+        height: 80px !important;
+        flex-shrink: 0 !important;
+    }
+
+    .usuario-info h1 {
+        font-size: 26px !important;
+    }
+
+    .estadisticas {
+        width: 100% !important;
+        justify-content: space-around !important;
+        gap: 0 !important;
+        border-top: 1px solid #F8D15C !important;
+        border-bottom: 1px solid #F8D15C !important;
+        padding: 16px 0 !important;
+    }
+
+    .btn-perfil {
+        background-color: #484848;
+        display: block;
+        width: 120px;
+        margin-top: 10px;
+        padding: 5px;
+        font-size: 12px;
+        font-family: "Creato Display";
+        border-radius: 8px;
+        cursor: pointer;
+        border: 2px solid #6E6D6D;
+        color: white;
+
+
+    }
+
+    .hero-eventos {
+        margin-top: -100Px;
+        margin-bottom: -0px;
+    }
+
+    main {
         padding: 20px;
         margin-top: 60px;
     }

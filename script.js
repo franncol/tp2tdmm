@@ -1,17 +1,3 @@
-const btnBuscar = document.getElementById("btnBuscar");
-const busqueda = document.getElementById("busqueda");
-
-if (btnBuscar && busqueda) {
-    btnBuscar.addEventListener("click", () => {
-        if (busqueda.style.display === "none" || busqueda.style.display === "") {
-            busqueda.style.display = "block";
-            busqueda.focus();
-        } else {
-            busqueda.style.display = "none";
-        }
-    });
-}
-
 const slides = document.querySelectorAll(".slide");
 const indicadores = document.querySelectorAll(".indicador");
 const izquierda = document.querySelector(".izquierda");
@@ -63,3 +49,8 @@ if (hamburguesa && menu) {
         menu.classList.toggle("abierto");
     });
 }
+document.addEventListener("click", (e) => {
+    if (menu.classList.contains("abierto") && !menu.contains(e.target) && !hamburguesa.contains(e.target)) {
+        menu.classList.remove("abierto");
+    }
+});
